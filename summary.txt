@@ -3,6 +3,7 @@ Figure:
 -- MASTER --
 	Può creare i vari utenti e gestire il tutto
 	Crea i vari campionati
+	Crea le varie partite
 
 
 -- DESIGNATORE --
@@ -49,10 +50,10 @@ utenti: idUtente, numeroTessera, password
 arbitri: idArbitro, nome, cognome, dataDiNascita, numeroTessera
 udc: idUdc, nome, cognome, dataDiNascita, numeroTessera
 designatori: idDesignatore, nome, cognome, dataDiNascita, numeroTessera
-società: idSocietà, numeroTessera, idUtente
+società: idSocietà, nome, numeroTessera
 giocatori: idGiocatore, nome, cognome, dataDiNascita
 giocatoriIscritti: idGiocatore, idSocietà
-campionati: idCampionato, categoria, anno("2020-21")
+campionati: idCampionato, categoria, genere, anno("2020-21")
 societàIscritte: idCampionato, idSocietà
 contabilità: saldo, idComponente
 partite: idPartita, idSocietàCasa, idSocietàTrasferta, data , idCampionato

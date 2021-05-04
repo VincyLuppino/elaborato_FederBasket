@@ -62,12 +62,12 @@
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="drop-down"><a href="#">Gestione campionati</a>
+                    <li class="drop-down"><a href="">Gestione campionati</a>
                         <ul>
                             <li><a href="aggiungiCampionato.php">Aggiungi campionato</a></li>
                             <li><a href="aggiungiPartita.php">Aggiungi partita</a></li>
                         </ul>
-                    <li><a href=""></a></li>
+                    </li>
                     <li><a href="creazioneUtente.php">Creazione utenti</a></li>
 
 
@@ -137,6 +137,11 @@
                                             <div class="col-sm-4">
                                                 <label class="form-control">
                                                     <input type="radio" id="designatoreRadio" name="component" value="Designatore">&nbspDesign.
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label class="form-control">
+                                                    <input type="radio" id="societa" name="component" value="Societa">&nbspSocietà
                                                 </label>
                                             </div>
                                         </div>

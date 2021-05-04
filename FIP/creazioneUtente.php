@@ -50,7 +50,7 @@
 
 </head>
 
-<body>
+<body style="background-image: url('assets/img/basketBackground.jpg')">
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
@@ -65,7 +65,7 @@
                     <li class="drop-down"><a href="#">Gestione campionati</a>
                         <ul>
                             <li><a href="aggiungiCampionato.php">Aggiungi campionato</a></li>
-                            <li><a href="#">Aggiungi partita</a></li>
+                            <li><a href="aggiungiPartita.php">Aggiungi partita</a></li>
                         </ul>
                     <li><a href=""></a></li>
                     <li><a href="creazioneUtente.php">Creazione utenti</a></li>
@@ -79,17 +79,10 @@
         </div>
     </header><!-- End Header -->
 
-    <nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
-        <div class="container" style="margin-top: 100px;">
-            <a class="navbar-brand" href="#">Registrazione al servizio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
+
 
     <main class="my-form">
-        <div class="cotainer">
+        <div class="cotainer" style="margin-top: 100px;">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card">

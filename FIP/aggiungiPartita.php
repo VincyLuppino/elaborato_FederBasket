@@ -62,57 +62,41 @@
 
 
 
-
-
     <div class="row" style="margin-top: 100px; font-size:20px">
         <div class="col-md-6 col-sm-12 col-lg-6 col-md-offset-3">
             <div class="panel panel-primary">
-                <div class="panel-heading">Registrazione campionato
+                <div class="panel-heading">Registrazione partita
                 </div>
                 <div class="panel-body">
                     <form name="myform">
                         <div class="form-group">
-                            <label for="categoria">Categoria</label>
-                            <select name="categoria" id="categoria" class="form-control" style="font-size: 14px;">
-                                <option selected>U13</option>
-                                <option>U14</option>
-                                <option>U15</option>
-                                <option>U16</option>
-                                <option>U18</option>
-                                <option>U15 eccellenza</option>
-                                <option>U16 eccellenza</option>
-                                <option>U18 eccellenza</option>
-                                <option>Prima divisione</option>
-                                <option>Promozione</option>
-                                <option>Serie D</option>
-                                <option>Serie C2</option>
-                                <option>Serie C1</option>
-                                <option>Serie B</option>
-                                <option>Serie A2</option>
-                                <option>Serie A1</option>
+                            <label for="societaCasa">Società casa</label>
+                            <select name="societaCasa" id="societaCasa" class="form-control" style="font-size: 14px;">
+                                <option>Societa casa</option>
                             </select>
                             <span id="error_gender" class="text-danger"></span>
                         </div>
 
                         <div class="form-group">
-                            <label for="gender">Genere</label>
-                            <select name="gender" id="gender" class="form-control" style="font-size: 14px;">
-                                <option selected>Maschile</option>
-                                <option>Femminile</option>
+                            <label for="societaTrasferta">Società trasferta</label>
+                            <select name="societaTrasferta" id="societaTrasferta" class="form-control" style="font-size: 14px;">
+                                <option>Societa trasferta</option>
                             </select>
                             <span id="error_gender" class="text-danger"></span>
                         </div>
 
                         <div class="form-group">
-                            <label for="anno">Anno</label>
-                            <select name="anno" id="anno" class="form-control" style="font-size: 14px;">
-                                <option selected>2020-21</option>
-                                <option>2021-22</option>
+                            <label for="data">Data</label>
+                            <input type="date" id="data" class="form-control" name='data' style="height: auto;">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="campionato">Campionato</label>
+                            <select name="campionato" id="campionato" class="form-control" style="font-size: 14px;">
+                                <option>Campionato</option>
                             </select>
                             <span id="error_gender" class="text-danger"></span>
                         </div>
-
-
 
                         <button id="submit" type="submit" value="submit" class="btn btn-primary center" style="font-size: 14px;">Submit</button>
 
@@ -122,4 +106,5 @@
             </div>
         </div>
     </div>
+
 </body>

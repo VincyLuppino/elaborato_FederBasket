@@ -25,38 +25,14 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/styleAnagrafica.css" rel="stylesheet">
-
-    <!-- per le tabbed pane-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="assets/css/styleDesignazioni.css" rel="stylesheet">
 
 
 
-
-    <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
 
 </head>
 
-
 <body style="background-image: url('assets/img/basketBackground.jpg')">
-
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
@@ -93,26 +69,32 @@
         </div>
     </header><!-- End Header -->
 
-
-    <div class="tab" style="margin-top: 100px; margin-left: 200px;">
-        <button class="tablinks" onclick="openCity(event, 'datiAnagrafici')">Dati anagrafici</button>
-        <button class="tablinks" onclick="openCity(event, 'datiResidenza')">Dati residenza</button>
-        <button class="tablinks" onclick="openCity(event, 'datiBancari')">Dati bancari</button>
+    <div class="sezioneDesignazioni">
+        <div class="dropdown" style="margin-top: 200px;">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown" style="margin-top: 200px;">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown" style="margin-top: 200px;">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
     </div>
-
-
-
-    <div id="datiAnagrafici" class="tabcontent" style="margin-left: 200px; background-color: white;">
-        anagrafica
-    </div>
-    <div id="datiResidenza" class="tabcontent" style="margin-left: 200px; background-color: white;">
-        residenza
-    </div>
-    <div id="datiBancari" class="tabcontent" style="margin-left: 200px; background-color: white;">
-        banca
-    </div>
-
-
 
 
 

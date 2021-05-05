@@ -27,8 +27,34 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/styleDesignazioni.css" rel="stylesheet">
 
+    <!-- per le tabbed pane-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <!--per la tabella-->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 </head>
 
@@ -69,33 +95,53 @@
         </div>
     </header><!-- End Header -->
 
-    <div class="sezioneDesignazioni">
-        <div class="dropdown" style="margin-top: 200px;">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
-        <div class="dropdown" style="margin-top: 200px;">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
-        <div class="dropdown" style="margin-top: 200px;">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
+    <div class="tab" style="margin-top: 100px; margin-left: 300px; ">
+        <button class="tablinks" onclick="openCity(event, 'daAccettare')">Da accettare</button>
+        <button class="tablinks" onclick="openCity(event, 'altre')">Altre</button>
     </div>
 
+
+
+    <div id="daAccettare" class="tabcontent" style="margin-left: 300px; background-color: white; ">
+
+
+
+        <div class="container">
+
+            <table class="table table-striped custab" style="width: auto;">
+                <thead>
+                    <tr>
+                        <th>N.gara</th>
+                        <th>Squadra casa</th>
+                        <th>Squadra trasferta</th>
+                        <th class="text-center">Action</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>ASD wsgsdfds</td>
+                    <td>FD dfgdfgfd</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Accetta</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Rifiuta</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>News</td>
+                    <td>News Cate</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Accetta</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Rifiuta</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>News</td>
+                    <td>News Cate</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Accetta</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Rifiuta</a></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <div id="altre" class="tabcontent" style="margin-left: 300px; background-color: white; ">
+        altre
+    </div>
 
 
 

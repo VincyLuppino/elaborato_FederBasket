@@ -25,8 +25,12 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/styleRimborso.css" rel="stylesheet">
+    <link href="assets/css/styleAssegnaPartite.css" rel="stylesheet">
 
+    <!-----parte delle designazioni-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 
 </head>
@@ -53,6 +57,55 @@
 
         </div>
     </header><!-- End Header -->
+
+
+
+
+
+    <div class="container" style="margin-top: 80px;">
+        <h1 class="well">Designazione partite</h1>
+        <div class="col-lg-12 well">
+            <div class="row">
+                <form>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="numeroGara">Numero gara</label>
+                            <select name="numeroGara" id="numeroGara" class="form-control" style="font-size: 14px;">
+                                <option>numeroGara</option>
+                            </select>
+                            <span id="error_gender" class="text-danger"></span>
+                        </div>
+
+                        <div class="row">
+                            <label for="arbitro1">&nbsp;&nbsp;&nbsp;&nbsp;Arbitro 1&nbsp;</label>
+                            <select name="arbitro1" id="arbitro1" class="form-control" style="width: auto;">
+                                <option>arbitro 1</option>
+                            </select>
+                            <span id="error_gender" class="text-danger"></span>
+                            <label for="arbitro2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arbitro 2&nbsp;</label>
+                            <select name="arbitro2" id="arbitro2" class="form-control" style="width: auto;">
+                                <option>arbitro 2</option>
+                            </select>
+                            <span id="error_gender" class="text-danger"></span>
+                        </div> <br>
+                        <div class="row">
+                            <label for="udc1">&nbsp;&nbsp;&nbsp;&nbsp;Udc 1&nbsp;</label>
+                            <select name="udc1" id="udc1" class="form-control" style="width: auto;">
+                                <option>udc 1</option>
+                            </select>
+                            <span id="error_gender" class="text-danger"></span>
+                            <label for="udc2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Udc 2&nbsp;</label>
+                            <select name="udc2" id="udc2" class="form-control" style="width: auto;">
+                                <option>udc 2</option>
+                            </select>
+                            <span id="error_gender" class="text-danger"></span>
+                        </div> <br>
+                        <button type="button" class="btn btn-lg btn-info">Designa</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
 

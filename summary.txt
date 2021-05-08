@@ -39,7 +39,9 @@ Figure:
 
 
 -- SOCIETA --
+	Registra giocatore
 	Tesseramento giocatori
+	Iscrizione campionati
 
 
 

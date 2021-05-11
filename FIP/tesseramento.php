@@ -89,16 +89,16 @@
 
 
 
-    <section style="margin-top: 100px; margin-left: 200px; background-color: white;">
+    <section style="margin-top: 100px; margin-left: 500px; background-color: white; width: 600px;">
         <div class="container">
 
-            <table class="table table-striped custab" style="width: auto;">
+            <table class="table table-striped custab" style="width: auto; border: 4px solid black;">
                 <thead>
                     <tr>
                         <th>N.giocatore</th>
                         <th>Nome</th>
                         <th>Cognome</th>
-                        <th class="text-center">Action</th>
+                        <th class="text-center">Tesseramento</th>
                     </tr>
                 </thead>
                 <tr>
@@ -111,6 +111,42 @@
                     <td>1</td>
                     <td>Vincenzo</td>
                     <td>Luppino</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Tessera</a> </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vincenzo</td>
+                    <td>Luppino</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Tessera</a> </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vincenzo</td>
+                    <td>Luppino</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Tessera</a> </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vincenzo</td>
+                    <td>Luppino</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Tessera</a> </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vincenzo</td>
+                    <td>Luppino</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Tessera</a> </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vincenzo</td>
+                    <td>Luppino</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Tessera</a> </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vincenzo</td>
+                    <td>Luppinosdgfsefwefwef</td>
                     <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Tessera</a> </td>
                 </tr>
 

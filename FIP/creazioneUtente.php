@@ -44,7 +44,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-    <title>Pagina di registrazione</title>
+    <title>Feder basket</title>
+    <!-- Favicons -->
+    <link href="assets/img/faviconFIP.jpg" rel="icon"> <!-- Logo in alto a sinistra -->
+    <link href="assets/img/faviconFIP.jpg" rel="faviconFIP.jpg">
 
     <link href="assets/css/styleCreazioneUtente.css" rel="stylesheet">
 

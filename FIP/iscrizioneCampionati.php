@@ -10,9 +10,11 @@
     <!------ Include the above in your HEAD tag ---------->
 
 
+    <title>Feder basket</title>
     <!-- Favicons -->
     <link href="assets/img/faviconFIP.jpg" rel="icon"> <!-- Logo in alto a sinistra -->
     <link href="assets/img/faviconFIP.jpg" rel="faviconFIP.jpg">
+
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">

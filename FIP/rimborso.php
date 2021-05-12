@@ -6,7 +6,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <!------ Include the above in your HEAD tag ---------->
 
-
+    <title>Feder basket</title>
     <!-- Favicons -->
     <link href="assets/img/faviconFIP.jpg" rel="icon"> <!-- Logo in alto a sinistra -->
     <link href="assets/img/faviconFIP.jpg" rel="faviconFIP.jpg">

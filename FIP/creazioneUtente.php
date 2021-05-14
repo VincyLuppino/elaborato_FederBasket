@@ -91,7 +91,7 @@
                     <div class="card">
                         <div class="card-header">Inserisci i dati</div>
                         <div class="card-body">
-                            <form name="my-form" onsubmit="return validform()" action="registrazioneSheet.php" method="post">
+                            <form name="my-form" onsubmit="return validform()" action="creazioneUtenteSheet.php" method="post">
                                 <div class="form-group row">
                                     <label for="name" class="col-md-4 col-form-label text-md-right">Nome</label>
                                     <div class="col-md-6">
@@ -116,7 +116,7 @@
                                 <div class="form-group row">
                                     <label for="numeroTessera" class="col-md-4 col-form-label text-md-right">Numero tessera</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="numeroTessera" class="form-control" name="numeroTessera">
+                                        <input type="text" id="numeroTessera" class="form-control" name="numeroTessera" placeholder="es. 070241">
                                     </div>
                                 </div>
 

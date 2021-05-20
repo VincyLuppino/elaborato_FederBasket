@@ -15,7 +15,7 @@ if ($componente == "Arbitro") {
     $nTessera = "S" . trim($_POST["numeroTessera"]);
 }
 
-echo $nTessera;
+
 
 
 
@@ -64,8 +64,8 @@ if ($result->num_rows == 1) {
     $prezzoIniziale = 0;
 
     if ($componente == "Arbitro") {
-
-        $sql = "INSERT INTO utenti (numeroTessera,psw) VALUES ('$nTessera',' ')";
+        $pw = md5("fip.2021");
+        $sql = "INSERT INTO utenti (numeroTessera,psw) VALUES ('$nTessera','$pw')";
         //Check if everything is ok
         if (mysqli_query($conn, $sql)) {
             //echo "Utente inserito";
@@ -78,7 +78,13 @@ if ($result->num_rows == 1) {
                     $row = $result->fetch_assoc();
                     $idSaldo = $row["idSaldo"];
 
-                    $sql = "INSERT INTO arbitro (nome,cognome,dataDiNascita, numeroTessera, idSaldo) VALUES ('$nTessera',' ')";
+                    $sql = "INSERT INTO arbitri (nome,cognome,dataDiNascita, numeroTessera, idSaldo) VALUES ('$nome','$cognome', '$dataDiNascita','$nTessera','$idSaldo')";
+
+                    if (mysqli_query($conn, $sql)) {
+                        // ok
+                        header("location: indexMaster.php");
+                        exit();
+                    }
                 }
             } else {
                 echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
@@ -87,11 +93,68 @@ if ($result->num_rows == 1) {
             echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
         }
     } else if ($componente == "Udc") {
-        echo "ud";
+        $pw = md5("fip.2021");
+        $sql = "INSERT INTO utenti (numeroTessera,psw) VALUES ('$nTessera','$pw')";
+        //Check if everything is ok
+        if (mysqli_query($conn, $sql)) {
+            //echo "Utente inserito";
+            $sql = "INSERT INTO contabilita (saldo) VALUES ('$prezzoIniziale')";
+            if (mysqli_query($conn, $sql)) {
+                //echo "Utente inserito";
+                $sql = "SELECT * FROM contabilita ORDER BY idSaldo DESC LIMIT 1";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0) {
+                    $row = $result->fetch_assoc();
+                    $idSaldo = $row["idSaldo"];
+
+                    $sql = "INSERT INTO udc (nome,cognome,dataDiNascita, numeroTessera, idSaldo) VALUES ('$nome','$cognome', '$dataDiNascita','$nTessera','$idSaldo')";
+
+                    if (mysqli_query($conn, $sql)) {
+                        // ok
+                        header("location: indexMaster.php");
+                        exit();
+                    }
+                }
+            } else {
+                echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+            }
+        } else {
+            echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+        }
     } else if ($componente == "Designatore") {
-        echo "de";
+        $pw = md5("fip.2021");
+        $sql = "INSERT INTO utenti (numeroTessera,psw) VALUES ('$nTessera','$pw')";
+        if (mysqli_query($conn, $sql)) {
+            //echo "Utente inserito";
+            $sql = "INSERT INTO designatori (nome,cognome,dataDiNascita, numeroTessera) VALUES ('$nome','$cognome', '$dataDiNascita','$nTessera')";
+
+            if (mysqli_query($conn, $sql)) {
+                //echo "Utente inserito";
+                header("location: indexMaster.php");
+                exit();
+            } else {
+                echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+            }
+        } else {
+            echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+        }
     } else if ($componente == "Societa") {
-        echo "soc";
+        $pw = md5("fip.2021");
+        $sql = "INSERT INTO utenti (numeroTessera,psw) VALUES ('$nTessera','$pw')";
+        if (mysqli_query($conn, $sql)) {
+            //echo "Utente inserito";
+            $sql = "INSERT INTO societa (nome, numeroTessera) VALUES ('$nome','$nTessera')";
+
+            if (mysqli_query($conn, $sql)) {
+                //echo "Utente inserito";
+                header("location: indexMaster.php");
+                exit();
+            } else {
+                echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+            }
+        } else {
+            echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+        }
     }
 }
 

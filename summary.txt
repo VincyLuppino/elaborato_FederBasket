@@ -49,18 +49,17 @@ Figure:
 TABELLE
 
 utenti: idUtente, numeroTessera, password
-arbitri: idArbitro, nome, cognome, dataDiNascita, numeroTessera
-udc: idUdc, nome, cognome, dataDiNascita, numeroTessera
+arbitri: idArbitro, nome, cognome, dataDiNascita, numeroTessera, idSaldo
+udc: idUdc, nome, cognome, dataDiNascita, numeroTessera, idSaldo
 designatori: idDesignatore, nome, cognome, dataDiNascita, numeroTessera
 datiAnagrafici: numeroTessera, nome, cognome, sesso(M,F), codiceFiscale, dataDiNascita, luogoDiNascita, provincia, regione, nazioneDiNascita, cittadinanza
 datiResidenza: numeroTessera, indirizzo, cap, regione, provincia, comune
 datiBancari: numeroTessera, cin, abi, cab, nConto, iban
 società: idSocietà, nome, numeroTessera
-giocatori: idGiocatore, nome, cognome, dataDiNascita
-giocatoriIscritti: idGiocatore, idSocietà
+giocatori: idGiocatore, nome, cognome, dataDiNascita, idSocietà
 campionati: idCampionato, categoria, genere, anno("2020-21")
 societàIscritte: idCampionato, idSocietà
-contabilità: saldo, numeroTessera
+contabilità: saldo, idSaldo
 partite: idPartita, idSocietàCasa, idSocietàTrasferta, data , idCampionato
 designazioni: idDesignazione, idPartita, idArbitro1, idArbitro2, idUdc1, idUdc2
 statoDesignazioni: idDesignazione, arbitro1Conf, arbitro2Conf, udc1Conf, udc2Conf

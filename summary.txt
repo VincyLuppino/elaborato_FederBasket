@@ -55,6 +55,7 @@ designatori: idDesignatore, nome, cognome, dataDiNascita, numeroTessera
 datiAnagrafici: numeroTessera, nome, cognome, sesso(M,F), codiceFiscale, dataDiNascita, luogoDiNascita, provincia, regione, nazioneDiNascita, cittadinanza
 datiResidenza: numeroTessera, indirizzo, cap, regione, provincia, comune
 datiBancari: numeroTessera, cin, abi, cab, nConto, iban
+amministratori: idAmministratore, nome, cognome, numeroTessera
 società: idSocietà, nome, numeroTessera
 giocatori: idGiocatore, nome, cognome, dataDiNascita, idSocietà
 campionati: idCampionato, categoria, genere, anno("2020-21")

@@ -62,11 +62,11 @@
                     <div class="panel-body">
                         <form role="form" method="post" action="cambioPasswordSheet.php" method="post">
                             <div class="form-group">
-                                <input type="text" name="vecchiaPassword" id="vecchiaPassword" class="form-control input-sm" placeholder="Vecchia password">
+                                <input type="password" name="vecchiaPassword" id="vecchiaPassword" class="form-control input-sm" placeholder="Vecchia password">
                             </div>
 
                             <div class="form-group">
-                                <input type="text" name="nuovaPassword" id="nuovaPassword" class="form-control input-sm" placeholder="Nuova password">
+                                <input type="password" name="nuovaPassword" id="nuovaPassword" class="form-control input-sm" placeholder="Nuova password">
                             </div>
 
 

@@ -26,29 +26,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['nTessera']) && isset($
             $_SESSION["nTessera"] = $nTessera;
 
             if ($pwNormal == "fip.2021") {
-                $_SESSION["component"] = $nTessera[0];
+                //$_SESSION["component"] = $nTessera[0];
                 header("location: cambioPassword.php");
                 exit();
+            } else {
+                if ($_SESSION["nTessera"][0] == "M") {
+                    $_SESSION["component"] = $_SESSION["nTessera"][0];
+                    header("location: indexMaster.php");
+                    exit();
+                } else if ($_SESSION["nTessera"][0] == "A" || $_SESSION["nTessera"][0] == "U") {
+                    $_SESSION["component"] = $nTessera[0];
+                    header("location: indexArbitroUdc.php");
+                    exit();
+                } else if ($_SESSION["nTessera"][0] == "D") {
+                    $_SESSION["component"] = $_SESSION["nTessera"][0];
+                    header("location: indexDesignatore.php");
+                    exit();
+                } else if ($_SESSION["nTessera"][0] == "S") {
+                    $_SESSION["component"] = $_SESSION["nTessera"][0];
+                    header("location: indexSocieta.php");
+                    exit();
+                }
             }
-            /*
-            if ($nTessera[0] == "M") {
-                $_SESSION["component"] = $nTessera[0];
-                header("location: indexMaster.php");
-                exit();
-            } else if ($nTessera[0] == "A" || $nTessera[0] == "U") {
-                $_SESSION["component"] = $nTessera[0];
-                header("location: indexArbitroUdc.php");
-                exit();
-            } else if ($nTessera[0] == "D") {
-                $_SESSION["component"] = $nTessera[0];
-                header("location: indexDesignatore.php");
-                exit();
-            } else if ($nTessera[0] == "S") {
-                $_SESSION["component"] = $nTessera[0];
-                header("location: indexSocieta.php");
-                exit();
-            }
-            */
         } else {
             header("location: login.php?error=1");
             exit();

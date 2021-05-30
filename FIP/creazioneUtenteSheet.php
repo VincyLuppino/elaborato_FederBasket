@@ -64,20 +64,22 @@ if ($result->num_rows == 1) {
     $prezzoIniziale = 0;
 
     if ($componente == "Arbitro") {
+        //password di default
         $pw = md5("fip.2021");
+        //query per l'inserimento dell'utente
         $sql = "INSERT INTO utenti (numeroTessera,psw) VALUES ('$nTessera','$pw')";
-        //Check if everything is ok
+        //Verifica se è tutto ok
         if (mysqli_query($conn, $sql)) {
-            //echo "Utente inserito";
+            //query per inserimento di un nuovo saldo
             $sql = "INSERT INTO contabilita (saldo) VALUES ('$prezzoIniziale')";
             if (mysqli_query($conn, $sql)) {
-                //echo "Utente inserito";
+                //seleziono l'ultimo saldo creato
                 $sql = "SELECT * FROM contabilita ORDER BY idSaldo DESC LIMIT 1";
                 $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
                     $row = $result->fetch_assoc();
                     $idSaldo = $row["idSaldo"];
-
+                    //inserisco un nuovo arbitro
                     $sql = "INSERT INTO arbitri (nome,cognome,dataDiNascita, numeroTessera, idSaldo) VALUES ('$nome','$cognome', '$dataDiNascita','$nTessera','$idSaldo')";
 
                     if (mysqli_query($conn, $sql)) {

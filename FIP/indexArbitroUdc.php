@@ -171,13 +171,13 @@
 
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-info">
-                            <h3>Multi</h3>
-                            <p class="pb-3"><em>Servizio di CAR pooling.</em></p>
+                            <h3>FIP</h3>
+                            <p class="pb-3"><em>Feder Basket.</em></p>
                             <p>
                                 Via Santa Caterina da Siena, 3 <br>
                                 22066 Mariano Comense CO<br><br>
                                 <strong>Telefono:</strong> +1 5589 55488 55<br>
-                                <strong>Email:</strong> info@progetto.com<br>
+                                <strong>Email:</strong> federBasket@fip.it<br>
                             </p>
                             <div class="social-links mt-3">
                                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -213,7 +213,7 @@
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <p>Scrivici qua</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
@@ -226,14 +226,14 @@
 
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>NomeAzienda</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Federazione italiana pallacanestro</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/multi-responsive-bootstrap-template/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="https://bootstrapmade.com/">Luppino Vincenzo</a>
             </div>
         </div>
     </footer><!-- End Footer -->

@@ -17,19 +17,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['nTessera']) && isset($
 
     if (!empty($nTessera) && !empty($pw)) {
 
+        //esecuzione della query 
         $result = $conn->query("select * from utenti where numeroTessera ='$nTessera' and psw='$pw'");
-        //var_dump("select * from password where email='$email' and password_='$pw'");
 
-        if ($result->num_rows == 1) {
-            //redirect alla pagina index.php con log avvenuto
-            $_SESSION["logged"] = true;
+
+        if ($result->num_rows == 1) { //se trova una corrispondenza
+
+            //salvataggio numero tessera in una variabile di sessione
             $_SESSION["nTessera"] = $nTessera;
 
-            if ($pwNormal == "fip.2021") {
-                //$_SESSION["component"] = $nTessera[0];
+            if ($pwNormal == "fip.2021") { // se la password è ancora quella di default redirect nella pagina cambio password
                 header("location: cambioPassword.php");
                 exit();
             } else {
+                //redirect verso la pagina corretta dato dal numero tessera
                 if ($_SESSION["nTessera"][0] == "M") {
                     $_SESSION["component"] = $_SESSION["nTessera"][0];
                     header("location: indexMaster.php");

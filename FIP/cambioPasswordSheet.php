@@ -3,11 +3,14 @@ session_start();
 include("DBConnection.php");
 
 $password = md5($_POST["nuovaPassword"]);
+
+//query per eseguire il cambio password
 $sql = "UPDATE utenti SET psw='$password' WHERE numeroTessera='$_SESSION[nTessera]'";
-echo $sql;
 
-if ($conn->query($sql) === TRUE) {
 
+if ($conn->query($sql) === TRUE) { //se il cambio password è andato a buon fine
+
+    //redirect verso la pagina corretta dato dal numero tessera
     if ($_SESSION["nTessera"][0] == "M") {
         $_SESSION["component"] = $_SESSION["nTessera"][0];
         header("location: indexMaster.php");
